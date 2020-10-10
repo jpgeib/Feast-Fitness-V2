@@ -5,12 +5,23 @@ import "./style.css";
 
 class MealPlanner extends Component {
     render() {
-        return(
-            <Grid>
-                <Grid.Column>
-                    <Header as="h1">MealPlanner</Header>
-                </Grid.Column>
-            </Grid>
+        return (
+            <div id="meal-page">
+                <Grid id="meal-header-container">
+                    <Grid.Row>
+                        <Grid.Column width={16}>
+                            <Header as="h1">Hungry? You Came to the Right Place!</Header>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+                <Grid id="meal-container">
+                    <Grid.Row>
+                        <Grid.Column width={16}>
+                            <Header as="h2">Choose One or More Methods for Searching:</Header>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </div>
         )
     }
 }

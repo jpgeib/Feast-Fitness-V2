@@ -18,6 +18,14 @@ export default class Navbar extends Component {
             <Menu id="navbar" pointing secondary>
                 <Menu.Item
                     as={Link}
+                    to="/"
+                    name="home"
+                    active={activeItem === "home"}
+                    content="Home"
+                    onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                    as={Link}
                     to="/mealplanner"
                     name="mealplanner"
                     active={activeItem === "mealplanner"}
