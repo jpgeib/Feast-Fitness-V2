@@ -15,7 +15,7 @@ export default class Navbar extends Component {
         const { activeItem } = this.state;
 
         return (
-            <Menu floated="right" pointing secondary>
+            <Menu id="navbar" pointing secondary>
                 <Menu.Item
                     as={Link}
                     to="/mealplanner"
