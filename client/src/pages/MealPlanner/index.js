@@ -7,7 +7,9 @@ class MealPlanner extends Component {
     render() {
         return(
             <Grid>
-                <Header as="h1">MealPlanner</Header>
+                <Grid.Column>
+                    <Header as="h1">MealPlanner</Header>
+                </Grid.Column>
             </Grid>
         )
     }
