@@ -1,4 +1,4 @@
-import React, { Component } from React;
+import React, { Component } from "react";
 import { Grid, Header } from "semantic-ui-react";
 
 import "./style.css";
