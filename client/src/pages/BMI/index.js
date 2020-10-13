@@ -25,6 +25,11 @@ class BMI extends Component {
                             <BMIResult />
                         </Grid.Column>
                     </Grid.Row>
+                    <Grid.Row>
+                        <Grid.Column width={16}>
+                            
+                        </Grid.Column>
+                    </Grid.Row>
                 </Grid>
             </div>
 
