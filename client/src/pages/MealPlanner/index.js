@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Header } from "semantic-ui-react";
-import MealrSearchForm from "../../components/MealSearchForm";
+import MealSearchForm from "../../components/MealSearchForm";
 
 import "./style.css";
 
@@ -21,7 +21,7 @@ class MealPlanner extends Component {
                             <Header as="h2">Choose One or More Methods for Searching:</Header>
                         </Grid.Column>
                         <Grid.Column width={16}>
-                            <MealrSearchForm />
+                            <MealSearchForm />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
