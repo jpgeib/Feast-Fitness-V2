@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Header } from "semantic-ui-react";
 import BMICard from "../../components/BMICard";
+import BMIResult from "../../components/BMIResult";
 
 import "./style.css";
 
@@ -21,7 +22,7 @@ class BMI extends Component {
                             <BMICard />
                         </Grid.Column>
                         <Grid.Column width={10}>
-
+                            <BMIResult />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
