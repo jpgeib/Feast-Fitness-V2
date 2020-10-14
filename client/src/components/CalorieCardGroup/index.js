@@ -11,7 +11,7 @@ import "./style.css";
 class CalorieCardGroup extends Component {
     render() {
         return (
-            <Card.Group>
+            <Card.Group itemsPerRow={5}>
                 <BreakfastCard />
                 <LunchCard />
                 <DinnerCard />
