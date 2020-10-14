@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Grid, Header } from "semantic-ui-react";
 import BMICard from "../../components/BMICard";
 import BMIResult from "../../components/BMIResult";
+import CalorieResult from "../../components/CalorieResult";
+import CalorieLogCard from "../../components/CalorieLogCard";
 
 import "./style.css";
 
@@ -21,13 +23,16 @@ class BMI extends Component {
                         <Grid.Column width={6}>
                             <BMICard />
                         </Grid.Column>
-                        <Grid.Column width={10}>
+                        <Grid.Column width={5}>
                             <BMIResult />
+                        </Grid.Column>
+                        <Grid.Column width={5}>
+                            <CalorieResult />
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
                         <Grid.Column width={16}>
-                            
+                            <CalorieLogCard />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

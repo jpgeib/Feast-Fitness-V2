@@ -49,3 +49,5 @@ class CalorieLogCard extends Component {
     }
 
 }
+
+export default CalorieLogCard;
