@@ -3,7 +3,7 @@ import { Card, Input, Button, Header } from "semantic-ui-react";
 
 import "./style.css";
 
-class CalorieLogCard extends Component {
+class CalorieCardGroup extends Component {
     render() {
         return (
             <Card>
@@ -50,4 +50,4 @@ class CalorieLogCard extends Component {
 
 }
 
-export default CalorieLogCard;
+export default CalorieCardGroup;

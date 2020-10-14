@@ -3,7 +3,7 @@ import { Grid, Header } from "semantic-ui-react";
 import BMICard from "../../components/BMICard";
 import BMIResult from "../../components/BMIResult";
 import CalorieResult from "../../components/CalorieResult";
-import CalorieLogCard from "../../components/CalorieLogCard";
+import CalorieCardGroup from "../../components/CalorieCardGroup";
 
 import "./style.css";
 
@@ -32,7 +32,7 @@ class BMI extends Component {
                     </Grid.Row>
                     <Grid.Row>
                         <Grid.Column width={16}>
-                            <CalorieLogCard />
+                            <CalorieCardGroup />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
