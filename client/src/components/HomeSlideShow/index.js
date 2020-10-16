@@ -11,17 +11,17 @@ class HomeSlideShow extends Component {
         return (
             <>
                 <div id="home-slideshow-container">
-                    <div className="slide">
+                    <div className="slide fade">
                         <div className="number">1 / 3</div>
                         <Image src={GreenVeggies} size="large" />
                         <Header as="h3" className="caption">Healthy Food</Header>
                     </div>
-                    <div className="slide">
+                    <div className="slide fade">
                         <div className="number">2 / 3</div>
                         <Image src={MixedVeggies} size="large" />
                         <Header as="h3" className="caption">Healthy Food</Header>
                     </div>
-                    <div className="slide">
+                    <div className="slide fade">
                         <div className="number">3 / 3</div>
                         <Image src={VeggieBasket} size="large" />
                         <Header as="h3" className="caption">Healthy Food</Header>
