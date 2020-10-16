@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Header, Image, Button } from "semantic-ui-react";
+import HomeSlideShow from "../../components/HomeSlideShow";
 import Silverware from "../../assets/images/fork-spoon.png";
 import HeartRate from "../../assets/images/heart-rate.png"
-import Vegetables from "../../assets/images/Leafy-Green.jpg";
 
 import "./style.css";
 
@@ -21,7 +21,7 @@ class Home extends Component {
                             </Grid.Row>
                             <Grid.Row>
                                 <Grid.Column width={16}>
-                                    <Image src={Vegetables} size="huge" />
+                                    <HomeSlideShow />
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
