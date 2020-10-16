@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Grid, Header, Image, Button } from "semantic-ui-react";
 import Silverware from "../../assets/images/fork-spoon.png";
 import HeartRate from "../../assets/images/heart-rate.png"
-import Vegetables from "../../assets/images/alt-veggie-backdrop1-edited.jpg";
+import Vegetables from "../../assets/images/Leafy-Green.jpg";
 
 import "./style.css";
 
