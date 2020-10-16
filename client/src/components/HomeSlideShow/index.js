@@ -7,7 +7,9 @@ import VeggieBasket from "../../assets/images/alt-veggie-backdrop2.jpg";
 import "./style.css";
 
 class HomeSlideShow extends Component {
+
     render() {
+        
         return (
             <>
                 <div id="home-slideshow-container">
