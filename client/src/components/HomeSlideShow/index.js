@@ -8,36 +8,31 @@ import "./style.css";
 
 class HomeSlideShow extends Component {
 
+    state = {
+        slide: ""
+    }
+
     render() {
         
         return (
             <>
-                <div id="home-slideshow-container">
-                    <div className="slide fade">
-                        <div className="number">1 / 3</div>
-                        <Image src={GreenVeggies} size="large" />
-                        <Header as="h3" className="caption">Healthy Food</Header>
+                <section id="home-slideshow-container">
+                    <div id="slide-holder">
+                        <section className="slide" id="previous">
+                            <div className="slide-thumbnail"></div>
+                        </section>
+                        <section className="slide" id="current">
+                            <div className="slide-thumbnail"></div>
+                        </section>
+                        <section className="slide" id="next">
+                            <div className="slide-thumbnail"></div>
+                        </section>
                     </div>
-                    <div className="slide fade">
-                        <div className="number">2 / 3</div>
-                        <Image src={MixedVeggies} size="large" />
-                        <Header as="h3" className="caption">Healthy Food</Header>
+                    <div className="slideshow-controller">
+                        <span>Previous</span>
+                        <span>Next</span>
                     </div>
-                    <div className="slide fade">
-                        <div className="number">3 / 3</div>
-                        <Image src={VeggieBasket} size="large" />
-                        <Header as="h3" className="caption">Healthy Food</Header>
-                    </div>
-
-                    <a className="prev" onClick=""><Icon name="arrow circle left" /></a>
-                    <a className="next" onClick=""><Icon name="arrow circle right" /></a>
-                </div>
-                <br />
-                <div id="slide-tracker">
-                    <span className="dot" onClick="" ></span>
-                    <span className="dot" onClick="" ></span>
-                    <span className="dot" onClick="" ></span>
-                </div>
+                </section>
             </>
         )
     }
