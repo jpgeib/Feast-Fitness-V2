@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { Grid, Header, Image, Button } from "semantic-ui-react";
 import HomeSlideShow from "../../components/HomeSlideShow";
 import Silverware from "../../assets/images/fork-spoon.png";
-import HeartRate from "../../assets/images/heart-rate.png"
+import HeartRate from "../../assets/images/heart-rate.png";
+import GreenVeggies from "../../assets/images/Leafy-Green.jpg";
+import MixedVeggies from "../../assets/images/alt-veggie-backdrop1-edited.jpg";
+import VeggieBasket from "../../assets/images/alt-veggie-backdrop2.jpg";
+
 
 import "./style.css";
 
@@ -21,7 +25,14 @@ class Home extends Component {
                             </Grid.Row>
                             <Grid.Row>
                                 <Grid.Column width={16}>
-                                    <HomeSlideShow />
+                                    <HomeSlideShow
+                                        interval={3000}
+                                        images={[
+                                            GreenVeggies,
+                                            MixedVeggies,
+                                            VeggieBasket
+                                        ]}
+                                    />
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
