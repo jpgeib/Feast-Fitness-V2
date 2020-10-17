@@ -28,7 +28,7 @@ class HomeSlideShow extends Component {
                             <div className="slide-thumbnail"></div>
                         </section>
                     </div>
-                    <div className="slideshow-controller">
+                    <div id="slideshow-controller">
                         <span>Previous</span>
                         <span>Next</span>
                     </div>
