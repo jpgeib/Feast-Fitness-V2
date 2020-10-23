@@ -2,11 +2,47 @@ import React, { Component } from "react";
 import { Label, Input } from "semantic-ui-react";
 
 export default class TextInput extends Component {
+
+    state = {
+        value: "",
+        weight: "",
+        feet: "",
+        inch: ""
+    }
+
+    handleChange = this.handleChange.bind(this);
+    weightChange = this.weightChange.bind(this);
+    heightChangeFeet = this.heightChangeFeet.bind(this);
+    heightChangeInch = this.heightChangeInch.bind(this);
+
+    handleChange(event) {
+        let inputValue = event.target.value;
+        this.setState({ value: inputValue });
+        this.props.onChange(inputValue);
+    }
+
+    weightChanged(weightValue) {
+        this.setState({ weight: weightValue });
+    }
+
+    feetChanged(feetValue) {
+        this.setState({ feet: feetValue });
+    }
+
+    inchChanged(inchValue) {
+        this.setState({ inch: inchValue });
+    }
+
     render() {
         return (
             <div>
                 <Label>{this.props.label}</Label>
-                <Input type="text" placeholder={this.props.placeholder} />
+                <Input
+                    value={this.state.value}
+                    type="text"
+                    placeholder={this.props.placeholder}
+                    onChange={this.handleChange}
+                />
             </div>
         );
     }
