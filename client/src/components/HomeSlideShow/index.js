@@ -3,7 +3,7 @@ import { Header, Image, Icon } from "semantic-ui-react";
 
 import "./style.css";
 
-const HomeSlideShow = ({ images = [], interval = 3000 }) => {
+const HomeSlideShow = ({ images = [], interval = 10000 }) => {
 
     const [thumbnails, setThumbnails] = useState([]);
     const [previousSlideStyle, setPreviousSlideStyle] = useState({});

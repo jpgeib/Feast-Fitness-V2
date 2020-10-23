@@ -26,7 +26,7 @@ class Home extends Component {
                             <Grid.Row>
                                 <Grid.Column width={16}>
                                     <HomeSlideShow
-                                        interval={3000}
+                                        interval={10000}
                                         images={[
                                             GreenVeggies,
                                             MixedVeggies,
