@@ -21,15 +21,15 @@ export default class TextInput extends Component {
         this.props.onChange(inputValue);
     }
 
-    weightChanged(weightValue) {
+    weightChange(weightValue) {
         this.setState({ weight: weightValue });
     }
 
-    feetChanged(feetValue) {
+    heightChangeFeet(feetValue) {
         this.setState({ feet: feetValue });
     }
 
-    inchChanged(inchValue) {
+    heightChangeInch(inchValue) {
         this.setState({ inch: inchValue });
     }
 
