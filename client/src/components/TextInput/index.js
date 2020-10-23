@@ -6,7 +6,7 @@ export default class TextInput extends Component {
         return (
             <div>
                 <Label>{this.props.label}</Label>
-                <Input type="text" placeholer={this.props.placeholer} />
+                <Input type="text" placeholder={this.props.placeholder} />
             </div>
         );
     }
