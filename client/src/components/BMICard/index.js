@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Card, Input, Button } from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
+import TextInput from "../TextInput";
 
 import "./style.css";
 
@@ -8,21 +9,18 @@ class BMICard extends Component {
         return (
             <Card>
                 <Card.Content>
-                    <Card.Header>Weight (lbs):</Card.Header>
-                    <Card.Description>
-                        <Input />
-                    </Card.Description>
-                    <Card.Header>Height (ft):</Card.Header>
-                    <Card.Description>
-                        <Input />
-                    </Card.Description>
-                    <Card.Header>Height (in):</Card.Header>
-                    <Card.Description>
-                        <Input />
-                    </Card.Description>
-                    <Card.Content extra>
-                        <Button content="Get Your BMI" size="small" color="blue" />
-                    </Card.Content>
+                    <div className="row">
+                        <TextInput label="Weight (lbs)" placeholder="Enter weight..." />
+                    </div>
+                    <div className="row">
+                        <TextInput label="Height (ft)" placeholder="Enter height..." />
+                    </div>
+                    <div className="row">
+                        <TextInput label="Height (in)" placeholder="Enter height..." />
+                    </div>
+                    <div className="row">
+                        
+                    </div>
                 </Card.Content>
             </Card>
         );
