@@ -4,10 +4,10 @@ import { Header } from "semantic-ui-react";
 import "./style.css";
 
 const BMIResult = () => {
-    return(
+    return (
         <div id="BMI-result">
-            <Header as="h3">Your BMI Index:</Header>
-            <p id="BMI-text"></p>
+            {/* <Header as="h3">Your BMI Index: {this.state.bmi}</Header>
+            <p id="BMI-text">{this.state.bmiClass}</p> */}
         </div>
     );
 }

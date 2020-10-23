@@ -6,14 +6,12 @@ export default class TextInput extends Component {
     state = {
         value: "",
         weight: "",
-        feet: "",
-        inch: ""
+        height: ""
     }
 
     handleChange = this.handleChange.bind(this);
     weightChange = this.weightChange.bind(this);
-    heightChangeFeet = this.heightChangeFeet.bind(this);
-    heightChangeInch = this.heightChangeInch.bind(this);
+    heightChange = this.heightChange.bind(this);
 
     handleChange(event) {
         let inputValue = event.target.value;
@@ -25,12 +23,8 @@ export default class TextInput extends Component {
         this.setState({ weight: weightValue });
     }
 
-    heightChangeFeet(feetValue) {
-        this.setState({ feet: feetValue });
-    }
-
-    heightChangeInch(inchValue) {
-        this.setState({ inch: inchValue });
+    heightChange(heightValue) {
+        this.setState({ height: heightValue });
     }
 
     render() {
