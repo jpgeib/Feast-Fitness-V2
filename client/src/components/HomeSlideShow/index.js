@@ -67,14 +67,8 @@ const HomeSlideShow = ({ images = [], interval = 3000 }) => {
         <>
             <section id="home-slideshow-container">
                 <div id="slide-holder">
-                    <section className="slide" id="previous">
-                        <div style={previousSlideStyle} className="slide-thumbnail"></div>
-                    </section>
                     <section className="slide" id="current">
                         <div style={currentSlideStyle} className="slide-thumbnail"></div>
-                    </section>
-                    <section className="slide" id="next">
-                        <div style={nextSlideStyle} className="slide-thumbnail"></div>
                     </section>
                 </div>
                 <div id="slideshow-controller">
