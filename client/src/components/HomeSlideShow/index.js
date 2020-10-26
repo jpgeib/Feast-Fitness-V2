@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, Image, Button } from "semantic-ui-react";
 
 import "./style.css";
 
@@ -67,13 +67,13 @@ const HomeSlideShow = ({ images = [], interval = 10000 }) => {
         <>
             <Grid id="home-slideshow-container">
                 <Grid.Row id="slide-holder">
-                    <section className="slide" id="current">
+                    <Grid.Column width={16} className="slide" id="current">
                         <Image fluid size="massive" style={currentSlideStyle} id="slide-thumbnail"/>
-                    </section>
+                    </Grid.Column>
                 </Grid.Row>
                 <Grid.Row id="slideshow-controller">
-                    <span onClick={previous}>Previous</span>
-                    <span onClick={next}>Next</span>
+                    <Button onClick={previous}>Previous</Button>
+                    <Button onClick={next}>Next</Button>
                 </Grid.Row>
             </Grid>
         </>
