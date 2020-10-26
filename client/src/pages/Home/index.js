@@ -38,7 +38,7 @@ class Home extends Component {
                         </Grid>
                     </Grid.Row>
                     <Grid.Row>
-                        <Grid>
+                        <Grid id="home-info-container">
                             <Grid.Row>
                                 <Grid.Column width={8}>
                                     <Grid>

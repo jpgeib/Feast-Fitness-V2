@@ -1,4 +1,17 @@
+/* #home-page {
+    background-color: #61c791;
+} */
+
 #home-container {
     margin: 0 auto;
-    width: 70%; 
+}
+
+#home-image-container {
+    background-color: #61c791;
+    margin: 0 auto;
+}
+
+#home-info-container {
+    margin: 0 auto;
+    width: 80%;
 }
