@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Header, Image, Button } from "semantic-ui-react";
 import HomeSlideShow from "../../components/HomeSlideShow";
+import Footer from "../../components/Footer";
 import Silverware from "../../assets/images/fork-spoon.png";
 import HeartRate from "../../assets/images/heart-rate.png";
 import GreenVeggies from "../../assets/images/Leafy-Green.jpg";
@@ -100,6 +101,7 @@ class Home extends Component {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
+                <Footer />
             </div>
         )
     }
