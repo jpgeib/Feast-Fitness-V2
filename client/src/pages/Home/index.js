@@ -85,7 +85,6 @@ class Home extends Component {
                                     </Grid>
                                 </Grid.Column>
                             </Grid.Row>
-
                         </Grid>
                     </Grid.Row>
                     <Grid.Row centered>
