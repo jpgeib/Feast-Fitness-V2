@@ -6,6 +6,12 @@
     margin: 0 auto;
 }
 
+#home-header {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 36px;
+}
+
 #home-image-container {
     background-color: #61c791;
     margin: 0 auto;
@@ -14,4 +20,17 @@
 #home-info-container {
     margin: 0 auto;
     width: 80%;
+}
+
+#home-btn {
+    background-color: #61c791;
+    color: white;
+    transition: 0.8s;
+}
+
+#home-btn:hover {
+    background-color: white;
+    color: #61c791;
+    transition: 0.5s;
+    border: 1px solid #61c791;
 }

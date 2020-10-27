@@ -20,7 +20,7 @@ class Home extends Component {
                         <Grid id="home-image-container">
                             <Grid.Row centered>
                                 <Grid.Column width={16}>
-                                    <Header as="h1">Welcome to Feast and Fitness</Header>
+                                    <Header id="home-header" as="h1">Welcome to Feast and Fitness</Header>
                                 </Grid.Column>
                             </Grid.Row>
                             <Grid.Row>
@@ -40,49 +40,65 @@ class Home extends Component {
                     <Grid.Row>
                         <Grid id="home-info-container">
                             <Grid.Row>
-                                <Grid.Column width={8}>
+                                <Grid.Column width={16}>
                                     <Grid>
                                         <Grid.Row>
-                                            <Grid.Column width={16}>
+                                            <Grid.Column width={8}>
                                                 <Image src={Silverware} size="medium" />
                                             </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <Header as="h2">Eat</Header>
-                                            </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <Header as="h3">Choose a healthy meal option that suits your dietary needs from our recipe search engine!</Header>
-                                            </Grid.Column>
-                                        </Grid.Row>
-                                    </Grid>
-                                </Grid.Column>
-                                <Grid.Column width={8}>
-                                    <Grid>
-                                        <Grid.Row>
-                                            <Grid.Column width={16}>
-                                                <Image src={HeartRate} size="medium" />
-                                            </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <Header as="h2">Watch What You Eat</Header>
-                                            </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <Header as="h3">Then, to make sure you're meeting your dietary needs, track your meals and caloric intake with our calorie tracker!</Header>
+                                            <Grid.Column width={8}>
+                                                <Grid>
+                                                    <Grid.Row>
+                                                        <Grid.Column width={16}>
+                                                            <Header as="h2">Eat</Header>
+                                                        </Grid.Column>
+                                                        <Grid.Column width={16}>
+                                                            <Header as="h3">Choose a healthy meal option that suits your dietary needs from our recipe search engine!</Header>
+                                                        </Grid.Column>
+                                                    </Grid.Row>
+                                                </Grid>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
                                 </Grid.Column>
                             </Grid.Row>
+                            <Grid.Row>
+                                <Grid.Column width={16}>
+                                    <Grid>
+                                        <Grid.Row>
+                                            <Grid.Column width={12}>
+                                                <Grid>
+                                                    <Grid.Row>
+                                                        <Grid.Column width={16}>
+                                                            <Header as="h2">Watch What You Eat</Header>
+                                                        </Grid.Column>
+                                                        <Grid.Column width={16}>
+                                                            <Header as="h3">Then, to make sure you're meeting your dietary needs, track your meals and caloric intake with our calorie tracker!</Header>
+                                                        </Grid.Column>
+                                                    </Grid.Row>
+                                                </Grid>
+                                            </Grid.Column>
+                                            <Grid.Column width={4}>
+                                                <Image src={HeartRate} size="medium" />
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                    </Grid>
+                                </Grid.Column>
+                            </Grid.Row>
+
                         </Grid>
                     </Grid.Row>
-
-
-                    <Grid.Row>
-                        <Button
-                            as={Link}
-                            to="/mealplanner"
-                            content="Not sure where to start? Click here!"
-                            id="home-btn"
-                            size="large"
-                            color="blue" />
+                    <Grid.Row centered>
+                        <Grid.Column width={3}>
+                            <Button
+                                as={Link}
+                                to="/mealplanner"
+                                id="home-btn"
+                                size="large"
+                                >
+                                Not sure where to start? Click here!
+                                    </Button>
+                        </Grid.Column>
                     </Grid.Row>
                 </Grid>
             </div>
